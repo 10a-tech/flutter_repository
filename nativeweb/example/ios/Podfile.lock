@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - nativeweb (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - nativeweb (from `.symlinks/plugins/nativeweb/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  nativeweb:
+    :path: ".symlinks/plugins/nativeweb/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  nativeweb: 7199bc9f201df984c53ea636f480b2fc65242da1
+
+PODFILE CHECKSUM: f32fb4e7c14f8b3ca19a369d7be425dd9241af27
+
+COCOAPODS: 1.8.4
