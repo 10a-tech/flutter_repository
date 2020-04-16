@@ -1,0 +1,39 @@
+<idea-plugin>
+    <id>com.spoon.assets.sync</id>
+    <name>Flutter-Assets-Sync</name>
+    <version>1.0</version>
+    <vendor email="1825203636@qq.com" url="https://github.com/OSpoon">OSpoon</vendor>
+
+    <description><![CDATA[
+      <p>1. 创建asstes/images目录</p>
+      <p>2. 在pubspec.yaml中开始assets</p>
+      <p>3. 点击蓝色的同步按钮</p>
+      <p>4. 通过Res.文件名去使用吧</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      暂无<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="FlutterAssetsSync" class="com.spoon.assets.sync.FlutterAssetsSync" text="FlutterAssetsSync"
+                description="资源同步"
+                icon="/icons/icon_sync.svg">
+            <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
