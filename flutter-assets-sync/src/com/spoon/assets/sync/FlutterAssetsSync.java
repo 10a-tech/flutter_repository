@@ -89,17 +89,17 @@ public class FlutterAssetsSync extends AnAction {
                 //开启assets配置后才追加资源配置
                 keepLines.add(jumpIndex, "  assets:");
                 keepLines.addAll(jumpIndex + 1, assets);
-                for (String out : keepLines) {
-                    //恢复文件内容
-                    writer.write(out);
-                    writer.newLine();
-                }
-                writer.flush();
                 //生成res.dart
                 generatedRDart(path, assets);
             } else {
                 helper.showErrMsg(Constants.NOT_OPEN_ASSETS);
             }
+            for (String out : keepLines) {
+                //恢复文件内容
+                writer.write(out);
+                writer.newLine();
+            }
+            writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
