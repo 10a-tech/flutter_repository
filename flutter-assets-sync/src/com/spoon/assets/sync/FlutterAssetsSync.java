@@ -10,17 +10,15 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
-import java.util.regex.Matcher;
 
-import static com.spoon.assets.sync.Constants.*;
+import static com.spoon.assets.sync.Constants.PUBSPEC;
+import static com.spoon.assets.sync.Constants.R_FILE;
 
 public class FlutterAssetsSync extends AnAction {
-
 
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 
     private Helper helper = null;
-
 
     @Override
     public void actionPerformed(AnActionEvent e) {
@@ -49,8 +47,6 @@ public class FlutterAssetsSync extends AnAction {
         }
         //更新pubspec.yaml
         updatePubspec(path, assets);
-        //生成r.dart
-        generatedRDart(path, assets);
     }
 
     /**
@@ -90,15 +86,20 @@ public class FlutterAssetsSync extends AnAction {
             writer = new BufferedWriter(new FileWriter(pubspec));
             // 将统计到的资源插入到jumpIndex的位置
             if (jumpIndex != 0) {
+                //开启assets配置后才追加资源配置
                 keepLines.add(jumpIndex, "  assets:");
                 keepLines.addAll(jumpIndex + 1, assets);
+                for (String out : keepLines) {
+                    //恢复文件内容
+                    writer.write(out);
+                    writer.newLine();
+                }
+                writer.flush();
+                //生成res.dart
+                generatedRDart(path, assets);
+            } else {
+                helper.showErrMsg(Constants.NOT_OPEN_ASSETS);
             }
-            for (String out : keepLines) {
-                //恢复文件内容
-                writer.write(out);
-                writer.newLine();
-            }
-            writer.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

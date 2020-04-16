@@ -43,15 +43,13 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/.DS_Store
-    - assets/images/banners/b_1.jpeg
-    - assets/images/banners/b_2.jpeg
-    - assets/images/banners/b_3.jpeg
-    - assets/images/banners/b_4.jpeg
-    - assets/images/company.jpg
     - assets/images/loading.jpeg
-    - assets/images/products/p_1.jpeg
-    - assets/images/products/p_2.jpeg
+    - assets/images/company.jpg
     - assets/images/products/p_3.jpeg
+    - assets/images/products/p_2.jpeg
     - assets/images/products/p_4.jpeg
-
+    - assets/images/products/p_1.jpeg
+    - assets/images/banners/b_4.jpeg
+    - assets/images/banners/b_3.jpeg
+    - assets/images/banners/b_2.jpeg
+    - assets/images/banners/b_1.jpeg

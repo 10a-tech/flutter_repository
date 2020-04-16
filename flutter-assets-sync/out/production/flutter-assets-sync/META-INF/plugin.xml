@@ -1,12 +1,12 @@
 <idea-plugin>
     <id>com.spoon.assets.sync</id>
     <name>Flutter-Assets-Sync</name>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <vendor email="1825203636@qq.com" url="https://github.com/OSpoon">OSpoon</vendor>
 
     <description><![CDATA[
       <p>1. 创建asstes/images目录</p>
-      <p>2. 在pubspec.yaml中开始assets</p>
+      <p>2. 在pubspec.yaml中开启assets</p>
       <p>3. 点击蓝色的同步按钮</p>
       <p>4. 通过Res.文件名去使用吧</p>
     ]]></description>

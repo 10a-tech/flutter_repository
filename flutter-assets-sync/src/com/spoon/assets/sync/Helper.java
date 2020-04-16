@@ -132,7 +132,7 @@ public class Helper {
      * @param msg
      */
     public static void showErrMsg(String msg) {
-        Messages.showMessageDialog(msg, "Flutter Assets Reference Generator", Messages.getErrorIcon());
+        Messages.showMessageDialog(msg, "Flutter Assets Sync", Messages.getErrorIcon());
     }
 
     /**

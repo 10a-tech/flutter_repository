@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website/generated/res.dart';
 import 'package:website/services/contact.dart';
 
 class AboutContentPage extends StatefulWidget {
@@ -22,7 +23,7 @@ class _AboutContentState extends State<AboutContentPage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/images/company.jpg',
+              Res.company,
               fit: BoxFit.cover,
             ),
             SizedBox(

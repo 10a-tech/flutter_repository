@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:website/generated/res.dart';
 
 class BannerWidget extends StatelessWidget {
-  List<String> banners = <String>[
-    'assets/images/banners/b_1.jpeg',
-    'assets/images/banners/b_2.jpeg',
-    'assets/images/banners/b_3.jpeg',
-    'assets/images/banners/b_4.jpeg',
-  ];
+  List<String> banners = <String>[Res.p_1, Res.b_2, Res.b_3, Res.b_4];
 
   @override
   Widget build(BuildContext context) {
