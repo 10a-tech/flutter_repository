@@ -139,7 +139,7 @@ public class Helper {
      * 展示成功信息
      */
     public static void showSuccessInfo() {
-        Messages.showMessageDialog("Complete!\nAssets reference has been updated successfully.",
+        Messages.showMessageDialog("Assets 引用已成功更新.",
                 "Flutter Assets Sync", Messages.getInformationIcon());
     }
 

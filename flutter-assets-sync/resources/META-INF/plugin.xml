@@ -1,14 +1,18 @@
 <idea-plugin>
     <id>com.spoon.assets.sync</id>
     <name>Flutter-Assets-Sync</name>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <vendor email="1825203636@qq.com" url="https://github.com/OSpoon">OSpoon</vendor>
 
     <description><![CDATA[
+      <p>使用:</p>
       <p>1. 创建asstes/images目录</p>
       <p>2. 在pubspec.yaml中开启assets</p>
       <p>3. 点击蓝色的同步按钮</p>
       <p>4. 通过Res.文件名去使用吧</p>
+      <br>
+      <p>注意:</p>
+      <p>如遇到"生成成功"/"开启assets但提示未开启"的情况,请使用Ideal内置菜单Reload from disk进行刷新刷新</p>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -30,7 +34,7 @@
     <actions>
         <!-- Add your actions here -->
         <action id="FlutterAssetsSync" class="com.spoon.assets.sync.FlutterAssetsSync" text="FlutterAssetsSync"
-                description="资源同步"
+                description="Flutter中Assets资源引用同步"
                 icon="/icons/icon_sync.svg">
             <add-to-group group-id="ToolbarRunGroup" anchor="last"/>
         </action>
