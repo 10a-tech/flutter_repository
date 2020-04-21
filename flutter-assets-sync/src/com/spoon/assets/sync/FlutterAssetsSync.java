@@ -129,7 +129,7 @@ public class FlutterAssetsSync extends AnAction {
     private void generatedRDart(String path, List<String> assets) {
         System.out.println("start generate res.dart...");
         //Res.dart生成目录
-        File resFile = new File(path + "/lib/generated", R_FILE);
+        File resFile = new File(path + "/lib", R_FILE);
         if (!resFile.exists()) {
             try {
                 resFile.createNewFile();

@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.spoon.assets.sync</id>
     <name>Flutter-Assets-Sync</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <vendor email="1825203636@qq.com" url="https://github.com/OSpoon">OSpoon</vendor>
 
     <description><![CDATA[
